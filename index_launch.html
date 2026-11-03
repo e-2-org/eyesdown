@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>eyes down</title>
+<script language="javascript">
+<!--
+// define global variable
+var win;
+var imgname = "";
+var intId;
+var intIdtwo;
+var stillplaying = true;
+
+function windowOpener(page, type)
+{
+    var features = "";
+    if (window.innerWidth) {
+        features += 'innerWidth=582,innerHeight=640';
+    } else {
+        features += 'width=582,height=640';
+    }
+    features += (type == 'img10')? ',scrollbars': '';
+    win = window.open(page,'Test',features);
+    imgname = type;
+    win.window.focus();
+}
+
+function checker()
+{
+    var tally = 0;
+    // loops through imgs checking whether their source has been changed yet
+    // if their src has been changed 1 is added to a tally
+    for (var i = 1; i < 31; i++) {
+        if (document.images["img" + i].src.indexOf("_on.gif") != -1) tally += 1;
+    }
+    // if all the images have been changed and 'you win' window opens
+    if (tally == 30 && stillplaying == true) {
+        var youwin = window.open('youwin.html','Test','toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no,width=350,height=170');
+        stillplaying = false;
+    }
+    window.clearInterval(intIdtwo);
+}
+
+function changer()
+{
+    // delay calling the function
+    intIdtwo = window.setInterval( "checker()" , 150);
+}
+
+//-->
+</script>
+	
+<style type="text/css">
+<!--
+td {font-size: 48px; font-family: impact; font-weight: bolder; text-align: center;}
+td.pink {background-color: #f8c7fb;}
+td.green {background-color: #c7fbe0;}
+td.yellow {background-color: #f9f9b6;}
+td.maeve {background-color: #e0aefc;}
+td.blue {background-color: #c7fbfb;}
+
+a {font-size: 48px; font-family: impact; font-weight: bolder;  font-color: #000000;}
+a:active {font-size: 48px; font-family: impact; font-weight: bolder; font-color: #000000;}
+a:visited {font-size: 48px; font-family: impact; font-weight: bolder;  font-color: #000000;}
+
+// -->
+</style>
+</head>
+
+<body onFocus="changer();" bgcolor="#ffffff">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td align="center">
+	<table width="750" cellpadding="0" cellspacing="0" bgcolor="#000000" border="0">
+		<tr>
+			<td>
+				<table width="750" cellpadding="0" cellspacing="2" border="0">
+					<tr>
+						<td width="75" height="75" class="pink"><a href="1.html" Target="hidden" onclick="windowOpener('one/kilburn1.html', 'img1');"><img src="images/numbers/one.gif" name="img1" width="75" height="70" alt="one" border="0"></a></td>
+						<td width="75" class="yellow"><a href="5.html" TARGET="hidden" onclick="windowOpener('five/gambling1.html', 'img5');"><img src="images/numbers/five.gif" name="img5" width="75" height="70"  alt="five" border="0"></a></td>
+						<td width="75" class="blue">&nbsp;</td>
+						<td width="75" class="maeve"><a href="12.html" TARGET="hidden" onclick="windowOpener('twelve/special_event1.html', 'img12');"><img src="images/numbers/twelve.gif" name="img12" width="75" height="70" alt="twelve" border="0"></a></td>
+						<td width="75" class="green">&nbsp;</td>
+						<td width="75" class="pink"><a href="17.html" TARGET="hidden"  onclick="windowOpener('seventeen/talking_mecca1.html', 'img17');"><img src="images/numbers/seventeen.gif" name="img17" width="75" height="70" alt="seventeen" border="0"></a></td>
+						<td width="75" class="yellow">&nbsp;</td>
+						<td width="75" class="blue">&nbsp;</td>
+						<td width="75" class="maeve"><a href="26.html" TARGET="hidden"  onclick="windowOpener('twentysix/bingo1.html', 'img26');"><img src="images/numbers/twentysix.gif" name="img26" width="75" height="70" alt="twentysix" border="0"></a></td>
+						<td width="75" class="green">&nbsp;</td>
+					</tr>
+
+					<tr>
+						<td height="75" class="pink">&nbsp;</td>
+						<td class="yellow"><a href="4.html" TARGET="hidden" onclick="windowOpener('four/staff1.html', 'img4');"><img src="images/numbers/four.gif" name="img4" width="75" height="70" alt="four" border="0"></a></td>
+						<td class="blue"><a href="9.html" TARGET="hidden"  onclick="windowOpener('nine/the_building1.html', 'img9');"><img src="images/numbers/nine.gif" name="img9" width="75" height="70" alt="nine" border="0"></a></td>
+						<td class="maeve">&nbsp;</td>
+						<td class="green">&nbsp;</td>
+						<td class="pink"><a href="18.html" TARGET="hidden"  onclick="windowOpener('eighteen/numbers1.html', 'img18');"><img src="images/numbers/eighteen.gif" name="img18" width="75" height="70" alt="eighteen" border="0"></a></td>
+						<td class="yellow"><a href="20.html" TARGET="hidden"  onclick="windowOpener('twenty/jingles1.html', 'img20');"><img src="images/numbers/twenty.gif" name="img20" width="75" height="70" alt="twenty" border="0"></a></td>
+						<td class="blue"><a href="22.html" TARGET="hidden"  onclick="windowOpener('twentytwo/dreams1.html', 'img22');"><img src="images/numbers/twentytwo.gif" name="img22" width="75" height="70" alt="twentytwo" border="0"></a></td>
+						<td class="maeve">&nbsp;</td>
+						<td class="green"><a href="29.html" TARGET="hidden"  onclick="windowOpener('twentynine/ak1.html', 'img29');"><img src="images/numbers/twentynine.gif" name="img29" width="75" height="70" alt="twentynine" border="0"></a></td>
+					</tr>
+
+					<tr>
+						<td height="75" class="pink">&nbsp;</td>
+						<td class="yellow">&nbsp;</td>
+						<td class="blue"><a href="8.html" TARGET="hidden"  onclick="windowOpener('eight/eyes_down1.html', 'img8');"><img src="images/numbers/eight.gif" name="img8" width="75" height="70" alt="eight" border="0"></a></td>
+						<td class="maeve">&nbsp;</td>
+						<td class="green"><a href="13.html" TARGET="hidden"  onclick="windowOpener('thirteen/religion1.html', 'img13');"><img src="images/numbers/thirteen.gif" name="img13" width="75" height="70" alt="thirteen" border="0"></a></td>
+						<td class="pink">&nbsp;</td>
+						<td class="yellow"><a href="21.html" TARGET="hidden"  onclick="windowOpener('twentyone/people1.html', 'img21');"><img src="images/numbers/twentyone.gif" name="img21" width="75" height="70" alt="twentyone" border="0"></a></td>
+						<td class="blue">&nbsp;</td>
+						<td class="maeve"><a href="25.html" TARGET="hidden"  onclick="windowOpener('twentyfive/cinema1.html', 'img25');"><img src="images/numbers/twentyfive.gif" name="img25" width="75" height="70" alt="twentyfive" border="0"></a></td>
+						<td class="green"><a href="28.html" TARGET="hidden"  onclick="windowOpener('twentyeight/references1.html', 'img28');"><img src="images/numbers/twentyeight.gif" name="img28" width="75" height="70" alt="twentyeight" border="0"></a></td>
+					</tr>
+
+					<tr>
+						<td height="75" class="pink"><a href="3.html" TARGET="hidden"  onclick="windowOpener('three/the_state1.html', 'img3');"><img src="images/numbers/three.gif" name="img3" width="75" height="70" alt="three" border="0"></a></td>
+						<td class="yellow">&nbsp;</td>
+						<td class="blue">&nbsp;</td>
+						<td class="maeve"><a href="10.html" TARGET="hidden"  onclick="windowOpener('ten/questionnaires1.html', 'img10');"><img src="images/numbers/ten.gif" name="img10" width="75" height="70" alt="ten" border="0"></a></td>
+						<td class="green">&nbsp;</td>
+						<td class="pink">&nbsp;</td>
+						<td class="yellow"><a href="19.html" TARGET="hidden"  onclick="windowOpener('nineteen/film1.html', 'img19');"><img src="images/numbers/nineteen.gif" name="img19" width="75" height="70" alt="nineteen" border="0"></a></td>
+						<td class="blue">&nbsp;</td>
+						<td class="maeve"><a href="27.html" TARGET="hidden"  onclick="windowOpener('twentyseven/books1.html', 'img27');"><img src="images/numbers/twentyseven.gif" name="img27" width="75" height="70" alt="twentyseven" border="0"></a></td>
+						<td class="green">&nbsp;</td>
+					</tr>
+
+					<tr>
+						<td height="75" class="pink">&nbsp;</td>
+						<td class="yellow"><a href="6.html" TARGET="hidden"  onclick="windowOpener('six/belief1.html', 'img6');"><img src="images/numbers/six.gif" name="img6" width="75" height="70" alt="six" border="0"></a></td>
+						<td class="blue">&nbsp;</td>
+						<td class="maeve"><a href="11.html" TARGET="hidden"  onclick="windowOpener('eleven/superstition1.html', 'img11');"><img src="images/numbers/eleven.gif" name="img11" width="75" height="70" alt="eleven" border="0"></a></td>
+						<td class="green"><a href="14.html" TARGET="hidden"  onclick="windowOpener('fourteen/loot1.html', 'img14');"><img src="images/numbers/fourteen.gif" name="img14" width="75" height="70" alt="fourteen" border="0"></a></td>
+						<td class="pink"><a href="16.html" TARGET="hidden"  onclick="windowOpener('sixteen/flyers1.html', 'img16');"><img src="images/numbers/sixteen.gif" name="img16" width="75" height="70" alt="sixteen" border="0"></a></td>
+						<td class="yellow">&nbsp;</td>
+						<td class="blue"><a href="24.html" TARGET="hidden"  onclick="windowOpener('twentyfour/stars1.html', 'img24');"><img src="images/numbers/twentyfour.gif" name="img24" width="75" height="70" alt="twentyfour" border="0"></a></td>
+						<td class="maeve">&nbsp;</td>
+						<td class="green"><a href="30.html" TARGET="hidden"  onclick="windowOpener('thirty/miscellaneous1.html', 'img30');"><img src="images/numbers/thirty.gif" name="img30" width="75" height="70" alt="thirty" border="0"></a></td>
+					</tr>
+
+					<tr>
+						<td height="75" class="pink"><a href="2.html" TARGET="hidden"  onclick="windowOpener('two/charms1.html', 'img2');"><img src="images/numbers/two.gif" name="img2" width="75" height="70" alt="two" border="0"></a></td>
+						<td class="yellow">&nbsp;</td>
+						<td class="blue"><a href="7.html" TARGET="hidden"  onclick="windowOpener('seven/camden_talks1.html', 'img7');"><img src="images/numbers/seven.gif" name="img7" width="75" height="70" alt="seven" border="0"></a></td>
+						<td class="maeve">&nbsp;</td>
+						<td class="green"><a href="15.html" TARGET="hidden"  onclick="windowOpener('fifteen/production1.html', 'img15');"><img src="images/numbers/fifteen.gif" name="img15" width="75" height="70" alt="fifteen" border="0"></a></td>
+						<td class="pink">&nbsp;</td>
+						<td class="yellow">&nbsp;</td>
+						<td class="blue"><a href="23.html" TARGET="hidden"  onclick="windowOpener('twentythree/memories1.html', 'img23');"><img src="images/numbers/twentythree.gif" name="img23" width="75" height="70" alt="twentythree" border="0"></a></td>
+						<td class="maeve">&nbsp;</td>
+						<td class="green">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	</td>
+		</tr>
+	</table>
+</body>
+</htmll>
+
+
